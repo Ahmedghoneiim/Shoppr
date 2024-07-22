@@ -1,0 +1,38 @@
+
+.navbar
+{
+    width: 90%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a
+{
+    color: #7f7f90;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    position: relative;
+}
+.navbar a:after
+{
+    content: "";
+    position: absolute;
+    background-color: #16A34A;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar a:hover
+{
+    color: #16A34A;
+}
+.navbar a:hover::after
+{
+    width: 100%;
+
+}
+
